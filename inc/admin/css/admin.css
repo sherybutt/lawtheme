@@ -1,0 +1,85 @@
+/*CheckBox CSS*/
+.checkBox-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.checkBox-switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkBox-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checkBox-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .checkBox-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .checkBox-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .checkBox-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*Theme Option CSS*/
+h1.wpmd-admin-head {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.wpmd-admin-head {
+    font-size: 20px;
+    font-style: italic;
+}
+.wpmd-custom-admin-table-theme-option {
+    background: linear-gradient(45deg, #000, #9e9e9e);
+    padding: 20px;
+    border-collapse: unset;
+    color: #fff;
+    border-radius: 8px;
+}
+.wpmd-custom-admin-table-theme-option th{
+  color: #fff;
+}
+.wpmd-admin-descrption {
+    margin: 0 0 20px;
+}
+.wpmd-admin-descrption p {
+    margin: 0 0 6px;
+    font-size: 14px;
+    font-style: italic;
+}
+.wpmd-admin-descrption p span {
+    font-style: normal;
+    font-weight: 500;
+    color: #673ab7;
+}
