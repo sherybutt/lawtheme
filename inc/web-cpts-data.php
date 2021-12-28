@@ -185,7 +185,7 @@ function wpmd_create_customposttype() {
 
 
     if($clientTestimonial == "on" ){
-        //News and Events CPT
+        //Testimonials CPT
         register_post_type( 'client_testimonials',
         // CPT Options
             array(
