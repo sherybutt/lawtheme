@@ -1472,7 +1472,7 @@ p.entry-meta {
 	max-width: 1920px;
 	margin: 0 auto;
 }
-body:not(home) .site-inner{
+body:not(.home) .site-inner{
 	margin-bottom: 30px;
 }
 body .alignfull,
